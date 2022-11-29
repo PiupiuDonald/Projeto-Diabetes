@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+:root{
+    --azul : #004A8D;
+    --laranja-claro: #fdc180;
+    --branco: #faf6f6;
+
+    --brancoClaro:#f7e1cb;
+
+    --back-color: rgba(248, 248, 248, 0.979);
+    --text-color: black;
+}
+body{
+    background-color: var(--branco);
+    color: var(--text-color);
+}
+a{
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1rem;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    align-items: center;
+    padding: 10%;
+}
+/*header*/
+header{
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: var(--azul);
+}
+header img, .logo{
+    width: 10%;
+}
+.logo-menu{
+    width: 70px;
+}
+span{
+    margin: 0 3%;
+    color: var(--branco)
+}
+header nav {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 9;
+    width: 30%;
+    height: 55vh;
+    top: 0;
+    right: 0;
+    padding: 16% 0;
+    text-align: right;
+    color: var(--branco);
+    background-color: var(--azul);
+
+}
+#botao_fechar{
+    margin-top: 36px;
+}
+.md-48{
+    font-size: 48px;
+}
+/*banner*/
+main #banner{
+    margin: 2% 2%;
+    text-align: center;
+}
+main #banner img{
+    width: 90%;
+
+}
+/*topicos*/
+main .topico{
+    text-align: center;
+    margin: 2%;
+}
+main .topico p{
+    line-height: 25px;
+    margin: 2% 0;
+}
+main .topico h2{
+    text-align: center;
+    margin: 5%;
+}
+main img{
+    margin: 2% 0;
+    border-radius: 30px;
+    box-shadow: 4px 4px 6px black;
+}
+
+/*footer*/
+footer{
+    color: var(--branco);
+    background-color: var(--azul);
+    align-items: center;
+}
+footer p{
+    margin: 0 2%;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+
+button{
+    color: var(--branco);
+    border: none;
+    background-color: transparent;
+}
+
+/*medias*/
+@media screen and (min-width: 1024px)
+{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        background-color: var(--laranja-claro);
+    }
+    #botao_menu{
+        display: none;
+    }
+    a{
+        color: var(--branco);
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    ul{
+        display: flex;
+        list-style-type: none;
+    }
+    li{
+        display: inline;
+        margin-right: 12px;
+    }
+    header{ 
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        background-color: var(--azul);
+        padding: 10px;
+    }
+    header img, .logo{
+        width: 10%;
+    }
+    .logo-menu{
+        margin: 0 1%;
+        width: 75px;
+    }
+    header nav{
+        display: block;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        height: auto;
+        padding: 0 22%;
+    }
+    header nav ul li:hover{
+        border-radius: 20px;
+        background: var(--laranja-claro);
+    }
+    header nav ul li a:hover{
+        color: #000;
+    }
+ 
+    main .topico{
+        border-radius: 20px;
+        box-shadow: 0 4px 18px #000;
+        text-align: center;
+        align-items: center;
+        padding: 1% 10%;
+        margin: 1% 20%;
+        background-color: white;
+    }
+    main #banner{
+        margin: 0 0 3px 0;
+        text-align: center;
+    }
+    main #banner img{
+        margin: 0;
+        width: 100%;
+        height: 600px;
+        border-radius: 10px;
+    }
+    
+    main .topico h2{
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 3%;
+    }
+    main .topico p{
+        font-size: 1.3rem;
+        margin: 1% 0;
+    }
+    main .topico img{
+        margin: 3% 0;
+        width: 70%;
+    }
+    main .topico h3{
+        font-size: 2rem;
+        margin: 2% 0;
+    }
+    footer{
+        text-align: center;
+    }
+    #botao_fechar{
+        display: none;
+    }
+    
+}
+
